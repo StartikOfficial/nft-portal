@@ -1,0 +1,28 @@
+* {
+  margin: 0 auto;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid purple;
+  margin: 20px;
+  height: 100px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.content {
+  width: 100px;
+  border: solid red;
+  height: 100px;
+  margin-right: 20px;
+  margin-left: 0px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.vert-line {
+  height: 100%;
+  width: 3px;
+  background-color: #000;
+}
+
+.hor-line {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+}
+
+body {
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  max-width: 566px;
+  bottom: 24px;
+  right: 0;
+}
+
+.navbar {
+  margin: 0 12px;
+  width: 100%;
+  border: 3px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  overflow: hidden;
+  padding: 0 12px;
+}
+
+.navbar a {
+  margin-top: 3px;
+  text-decoration: none;
+}
+
+.navbar a span {
+  display: none;
+}
+
+.nft-container {
+  margin: 5% auto 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.nft-image,
+.nft-specs {
+  width: 100%;
+  height: 50%;
+}
+
+.nft-specs {
+  background-color: tomato;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: solid 3px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-shadow: 0px 0px 0px #000;
+          box-shadow: 0px 0px 0px #000;
+}
+
+.nft-specs > div {
+  border-bottom: solid 3px;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 6px;
+  padding-bottom: 12px;
+  justify-self: flex-end;
+}
+
+.nft-specs > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 50%;
+  width: 100%;
+  font-size: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nft-specs > div:first-child {
+  height: 40%;
+}
+
+.nft-specs > div:first-child span:first-child {
+  max-width: 65%;
+}
+
+.nft-specs > div:last-child {
+  border-bottom: none;
+}
+
+.nft-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 252px;
+  min-height: 540px;
+  height: 70%;
+  -webkit-box-shadow: 8px 6px 36px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 8px 6px 36px 4px rgba(0, 0, 0, 0.3);
+  margin: 0 10%;
+}
+
+.nft-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-width: 252px;
+  min-height: 36px;
+  border: solid 3px black;
+  margin: 24px 10%;
+  width: 80%;
+}
+
+.nft-navigation a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nft-specs_primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 42px;
+}
+
+.nft-specs_physical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.specs_nft-name {
+  line-height: 1;
+}
+
+.specs_id {
+  font-size: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.specs_id span:first-child {
+  font-size: 42px;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2px;
+}
+
+.specs_id span:last-child {
+  letter-spacing: -3px;
+  line-height: 1;
+}
+
+.description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20%;
+}
+
+.nft-description {
+  margin: 0 15%;
+}
+
+@media (min-width: 712px) {
+  .navbar {
+    bottom: 36px;
+  }
+  .nft-container {
+    height: 60vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nft-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-width: 540px;
+    min-height: 264px;
+    height: 35%;
+    background-color: #000;
+    -webkit-clip-path: polygon(0 0, calc(95% + 4px) 0%, 100% calc(10% - 3.5px), 100% 100%, 0 100%);
+            clip-path: polygon(0 0, calc(95% + 4px) 0%, 100% calc(10% - 3.5px), 100% 100%, 0 100%);
+  }
+  .nft-specs {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    -webkit-clip-path: polygon(0 0, 90% 0%, 100% 10%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 90% 0%, 100% 10%, 100% 100%, 0 100%);
+  }
+  .nft-image,
+  .nft-specs {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 968px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .nft-container {
+    height: 85vh;
+  }
+  .description-container {
+    width: 42%;
+  }
+  .navbar {
+    padding-top: 2px;
+    padding-bottom: 6px;
+  }
+  .navbar a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  .navbar a span {
+    display: block;
+    font-size: 16px;
+    color: #000;
+  }
+}
+/*# sourceMappingURL=nft_style.css.map */

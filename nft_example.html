@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Portal</title>
+    <link rel="stylesheet" href="nft_style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="arrows">
+            <div class="arrow-left">
+                <svg width="165" height="60" viewBox="0 0 55 20" fill="none" opacity="0.4" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M53 10H6.45177" stroke="black" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel"/>
+                    <path d="M11.4037 2L2.99999 10L11.4037 18" stroke="black" stroke-width="3"/>
+                </svg>
+            </div>
+            <div class="arrow-right">
+                <svg width="165" height="60" viewBox="0 0 55 20" fill="none" opacity="0.4" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 10H48.5482" stroke="black" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel"/>
+                    <path d="M43.5963 2L52 10L43.5963 18" stroke="black" stroke-width="3"/>
+                </svg>
+            </div>
+        </div> -->
+        <div class="navbar-container">
+            <nav class="navbar">
+                <a href="#home" onclick="">
+                    <!-- <img src="./svgs/Home.svg" alt="" srcset=""> -->
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="36" height="36" fill="white" style="mix-blend-mode:multiply"/>
+                        <path d="M18.6888 2.49058C18.4891 2.33476 18.2431 2.25012 17.9898 2.25012C17.7365 2.25012 17.4905 2.33476 17.2908 2.49058L1.125 15.0969L2.52304 16.865L4.5 15.3236V29.2501C4.50122 29.8464 4.73866 30.418 5.16036 30.8397C5.58205 31.2614 6.15364 31.4988 6.75 31.5001C6.75 31.5001 28.6536 31.5012 29.25 31.5001C29.8464 31.499 30.4181 31.2616 30.8398 30.8398C31.2615 30.4181 31.4989 29.8465 31.5 29.2501V15.3338L33.477 16.8751L34.875 15.1068L18.6888 2.49058ZM20.25 29.2501H15.75V20.2501H20.25V29.2501ZM22.5 29.2501V20.2501C22.4993 19.6535 22.262 19.0816 21.8402 18.6598C21.4184 18.238 20.8465 18.0007 20.25 18.0001H15.75C15.1534 18.0007 14.5815 18.2379 14.1597 18.6597C13.7378 19.0816 13.5006 19.6535 13.5 20.2501V29.2501H6.75V13.5692L18 4.8055L29.25 13.5811V29.2501H22.5Z" fill="#161616"/>
+                    </svg>
+                    <span>Главная</span>
+                </a>
+                <a href="#tennis">
+                    <!-- <img src="./svgs/Tennis.svg" alt="" srcset=""> -->
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="36" height="36" fill="white" style="mix-blend-mode:multiply"/>
+                        <path d="M27 4.5C27 3.25736 25.9926 2.25 24.75 2.25C23.5074 2.25 22.5 3.25736 22.5 4.5C22.5 5.74264 23.5074 6.75 24.75 6.75C25.9926 6.75 27 5.74264 27 4.5Z" fill="#161616"/>
+                        <path d="M12.375 18C12.1525 18 11.9351 17.9339 11.7501 17.8103C11.5651 17.6867 11.421 17.511 11.3359 17.3055C11.2507 17.0999 11.2285 16.8738 11.2718 16.6556C11.3152 16.4374 11.4223 16.237 11.5796 16.0796L19.4546 8.20463C19.5584 8.09718 19.6825 8.01147 19.8198 7.95251C19.957 7.89355 20.1047 7.86252 20.254 7.86122C20.4034 7.85992 20.5516 7.88838 20.6898 7.94495C20.8281 8.00152 20.9537 8.08505 21.0593 8.19068C21.1649 8.29631 21.2485 8.42192 21.305 8.56018C21.3616 8.69844 21.3901 8.84657 21.3888 8.99595C21.3875 9.14533 21.3564 9.29295 21.2975 9.4302C21.2385 9.56746 21.1528 9.6916 21.0454 9.79537L13.1704 17.6704C13.0661 17.775 12.9421 17.858 12.8056 17.9146C12.6691 17.9712 12.5228 18.0002 12.375 18Z" fill="#161616"/>
+                        <path d="M26.6704 27.3296C25.2088 25.9589 23.3492 25.0886 21.3604 24.8445C21.5845 24.6599 21.8026 24.4661 22.0103 24.2584C23.378 22.7864 24.2901 20.9497 24.6361 18.9703C24.9822 16.991 24.7475 14.9538 23.9604 13.105L21.849 13.8895C23.0977 17.2425 22.5629 20.5242 20.4177 22.6669C19.5963 23.4564 18.6066 24.0492 17.523 24.4009C16.4393 24.7526 15.2901 24.8539 14.1616 24.6972C11.7068 24.4119 9.41974 23.3079 7.66924 21.5634C4.32495 18.2222 3.08385 12.3074 6.56617 8.82844C8.71132 6.68497 11.9962 6.15094 15.3517 7.39856L16.1378 5.28919C11.9943 3.74962 7.71649 4.49561 4.97329 7.23724C0.537748 11.6681 1.96267 19.0448 6.07579 23.1548C8.19303 25.2608 10.9579 26.5923 13.9245 26.9348C14.1607 26.9595 14.3917 26.9611 14.6245 26.9721V27H20.2459C22.0309 27.0604 23.7395 27.7392 25.0792 28.9204L29.9091 33.75L31.5 32.1591L26.6704 27.3296Z" fill="#161616"/>
+                    </svg>
+                    <span>Теннис</span>
+                </a>
+                <a href="#add">
+                    <!-- <img src="./svgs/Add.svg" alt="" srcset=""> -->
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" fill="white" style="mix-blend-mode:multiply"/>
+                        <path d="M24 6C33.9 6 42 14.1 42 24C42 33.9 33.9 42 24 42C14.1 42 6 33.9 6 24C6 14.1 14.1 6 24 6ZM24 3C12.45 3 3 12.45 3 24C3 35.55 12.45 45 24 45C35.55 45 45 35.55 45 24C45 12.45 35.55 3 24 3Z" fill="#161616"/>
+                        <path d="M36 22.5H25.5V12H22.5V22.5H12V25.5H22.5V36H25.5V25.5H36V22.5Z" fill="#161616"/>
+                    </svg>
+                    <span>Добавить NFT</span>
+                </a>
+                <a href="#statistics">
+                    <!-- <img src="./svgs/Statistics.svg" alt="" srcset=""> -->
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="36" height="36" fill="white" style="mix-blend-mode:multiply"/>
+                        <path d="M19.125 11.25H16.875V20.25H19.125V11.25Z" fill="#161616"/>
+                        <path d="M24.75 15.75H22.5V20.25H24.75V15.75Z" fill="#161616"/>
+                        <path d="M13.5 13.5H11.25V20.25H13.5V13.5Z" fill="#161616"/>
+                        <path d="M28.125 4.5H19.125V2.25H16.875V4.5H7.875C7.27826 4.5 6.70597 4.73705 6.28401 5.15901C5.86205 5.58097 5.625 6.15326 5.625 6.75V22.5C5.625 23.0967 5.86205 23.669 6.28401 24.091C6.70597 24.5129 7.27826 24.75 7.875 24.75H16.875V31.5H12.375V33.75H23.625V31.5H19.125V24.75H28.125C28.7217 24.75 29.294 24.5129 29.716 24.091C30.1379 23.669 30.375 23.0967 30.375 22.5V6.75C30.375 6.15326 30.1379 5.58097 29.716 5.15901C29.294 4.73705 28.7217 4.5 28.125 4.5ZM28.125 22.5H7.875V6.75H28.125V22.5Z" fill="#161616"/>
+                    </svg>
+                    <span>Статистика</span>
+                </a>
+                <a href="#user">
+                    <!-- <img src="./svgs/User.svg" alt="" srcset=""> -->
+                    <svg focusable="false" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="36" height="36" fill="white" style="mix-blend-mode:multiply"/>
+                        <path d="M18 4.5C19.1125 4.5 20.2001 4.8299 21.1251 5.44798C22.0501 6.06607 22.7711 6.94457 23.1968 7.97241C23.6226 9.00024 23.734 10.1312 23.5169 11.2224C23.2999 12.3135 22.7641 13.3158 21.9775 14.1025C21.1908 14.8891 20.1885 15.4249 19.0974 15.6419C18.0062 15.859 16.8752 15.7476 15.8474 15.3218C14.8196 14.8961 13.9411 14.1751 13.323 13.2501C12.7049 12.3251 12.375 11.2375 12.375 10.125C12.375 8.63316 12.9676 7.20242 14.0225 6.14752C15.0774 5.09263 16.5082 4.5 18 4.5ZM18 2.25C16.4425 2.25 14.9199 2.71186 13.6249 3.57718C12.3298 4.44249 11.3205 5.6724 10.7244 7.11137C10.1284 8.55034 9.97246 10.1337 10.2763 11.6613C10.5802 13.1889 11.3302 14.5921 12.4315 15.6935C13.5329 16.7948 14.9361 17.5448 16.4637 17.8487C17.9913 18.1525 19.5747 17.9966 21.0136 17.4006C22.4526 16.8045 23.6825 15.7952 24.5478 14.5001C25.4131 13.2051 25.875 11.6825 25.875 10.125C25.875 8.03642 25.0453 6.03338 23.5685 4.55653C22.0916 3.07969 20.0886 2.25 18 2.25Z" fill="#161616"/>
+                        <path d="M29.25 33.75H27V28.125C27 27.3863 26.8545 26.6549 26.5718 25.9724C26.2891 25.2899 25.8748 24.6699 25.3525 24.1475C24.8301 23.6252 24.2101 23.2109 23.5276 22.9282C22.8451 22.6455 22.1137 22.5 21.375 22.5H14.625C13.1332 22.5 11.7024 23.0926 10.6475 24.1475C9.59263 25.2024 9 26.6332 9 28.125V33.75H6.75V28.125C6.75 26.0364 7.57969 24.0334 9.05653 22.5565C10.5334 21.0797 12.5364 20.25 14.625 20.25H21.375C23.4636 20.25 25.4666 21.0797 26.9435 22.5565C28.4203 24.0334 29.25 26.0364 29.25 28.125V33.75Z" fill="#161616"/>
+                    </svg>
+                    <span>Профиль</span>
+                </a>
+            </nav>
+        </div>
+        <div class="nft-container">
+            <div class="nft-card">
+                <img src="./nfts-icons/z.jpg" alt="" srcset="" class="nft-image">
+                <div class="nft-specs">
+                    <div class="nft-specs_primary">
+                        <span class="specs_nft-name">
+                            Своих не бросаем
+                        </span>
+                        <span class="specs_id">
+                            <span>#</span>
+                        <span>0</span>
+                        </span>
+
+
+                    </div>
+                    <div class="nft-specs_mint">
+                        <div>Создатель</div>
+                        <span class="specs_creator">
+                            la_ la_code
+                        </span>
+                        <span class="specs_mint-date">
+                            02.04.2022
+                        </span>
+                    </div>
+                    <div class="nft-specs_physical">
+                        <div>Характеристики</div>
+                        <span class="specs_animated">
+                            Статично
+                        </span>
+                        <span class="specs_type">
+                            Двуручное
+                        </span>
+                    </div>
+
+                    <div class="nft-specs_current-state">
+                        <div>Владелец</div>
+                        <span class="specs_current-owner">
+                            Startik
+                        </span>
+                        <span class="specs_owned-time">
+                            0 дней
+                        </span>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="nft-navigation">
+                <a href="#left">
+                    <svg width="55" height="20" viewBox="0 0 55 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M53 10H6.45177" stroke="black" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel"/>
+                        <path d="M11.4037 2L2.99999 10L11.4037 18" stroke="black" stroke-width="3"/>
+                    </svg>
+
+                </a>
+
+                <div class="vert-line"></div>
+                <a href="#right">
+                    <svg width="55" height="20" viewBox="0 0 55 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 10H48.5482" stroke="black" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel"/>
+                        <path d="M43.5963 2L52 10L43.5963 18" stroke="black" stroke-width="3"/>
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+        <div class="description-container">
+            <div class="nft-description">
+                <h2>Описание</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, sed illum cumque ipsa nesciunt amet voluptas quia dolore maxime. Recusandae itaque impedit deleniti totam illo officia aut facere temporibus id.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./nft_script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+* {
+    margin: 0 auto;
+}
+
+.block {
+    display: flex;
+    border: solid purple;
+    margin: 20px;
+    height: 100px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.content {
+    width: 100px;
+    border: solid red;
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 0px;
+}

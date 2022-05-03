@@ -1,0 +1,113 @@
+@import './nft_style';
+// STYLING
+.transparent-block {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+#triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid black;
+}
+
+// .vert-line {
+//     position: absolute;
+//     left: 50%;
+// }
+// .hor-line {
+//     position: absolute;
+//     top: 50%;
+// }
+//USER
+.user-header-container {
+    height: 170px;
+    background-color: rgba($color: rgb(225, 0, 255), $alpha: 0.3);
+    width: 100%;
+    border-bottom: 3px solid;
+}
+
+.user-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 62px;
+}
+
+.user-main-container {
+    clip-path: polygon(0 0, 100% 0, 100% 77%, 87% 100%, 13% 100%, 0 77%);
+    background-color: rgba(red, 0.5);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .dropdown-statistics span {
+        font-size: 16;
+        color: #858383;
+    }
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.user-info_name {
+    font-size: 48px;
+}
+
+.user-info_lvl {
+    background-color: #24C277;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 130px;
+    color: white;
+    padding: 3px 6px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.user-nfts,
+.user-statistics {
+    width: 94%;
+    height: 40vh;
+    margin-top: 3%;
+    border: 3px solid;
+}
+
+.user-nfts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dropdown-statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-statistics {
+    display: none;
+    flex-direction: row;
+    width: 300px;
+    >div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.user-statistics-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2px;
+}
